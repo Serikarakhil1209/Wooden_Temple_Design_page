@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wooden Temple Design</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f0f0f0;
+            scroll-behavior: smooth;
+        }
+        
+        header {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: goldenrod;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 20px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: darkgoldenrod;
+            color: #fffacd;
+            border-radius: 5px;
+        }
+        
+        .hero-section {
+            position: relative;
+            /* text-align: center; */
+            color: rgb(244, 238, 238);
+            background: url('home.jpg') center/cover no-repeat;
+            height: 700px;
+            display: flex;
+            /* align-items: center; */
+            padding-top: 170px;
+            padding-right: 20px;
+            justify-content: center;
+            
+            
+        }
+        
+        .hero-section h1 {
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000;
+        }
+        
+        .design-section {
+            padding: 40px 20px;
+            background-color: #ffffff;
+        }
+        
+        .design-section h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 36px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        
+        .design-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        .design-grid div {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            background-color: #fff;
+        }
+        
+        .design-grid div img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+            border-radius: 10px;
+        }
+        
+        .design-grid div:hover {
+            transform: scale(1.05);
+        }
+        
+        .design-grid div:hover img {
+            transform: scale(1.1);
+        }
+        
+        .about-section {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .about-section h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 36px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .about-section p {
+            color: #666;
+            font-size: 18px;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .contact-section {
+            padding: 40px 20px;
+            background-color: #fffacd;
+        }
+
+        .contact-section h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 36px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .contact-section strong, .contact-section p {
+            display: block;
+            color: #666;
+            font-size: 18px;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .design-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .design-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                font-size: 14px;
+                padding: 10px 8px;
+            }
+
+            .hero-section h1, .design-section h1, .about-section h1, .contact-section h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#design">Design</a>
+            <a href="#about_us">About US</a>
+            <a href="#contact_us">Contact US</a>
+        </nav>
+    </header>
+    <section id="home" class="hero-section">
+        <h1>DIGWAL CREATION</h1>
+    </section>
+    <section id="design" class="design-section">
+        <h1><u>Design</u></h1>
+        <div class="design-grid">
+            <div>
+                <img src="1.jpg" alt="Design 1">
+                <p><b>PRICE: $100</b></p>
+            </div>
+            <div>
+                <img src="2.jpg" alt="Design 2">
+                <p><b>PRICE: $100</b></p>
+            </div>
+            <div>
+                <img src="3.jpg" alt="Design 3">
+                <p><b>PRICE: $100</b></p>
+            </div>
+            <div>
+                <img src="4.jpg" alt="Design 4">
+                <p><b>PRICE: $100</b></p>
+            </div>
+            <div>
+                <img src="5.jpg" alt="Design 5">
+                <p><b>PRICE: $100</b></p>
+            </div>
+            <div>
+                <img src="6.jpg" alt="Design 6">
+                <p><b>PRICE: $100</b></p>
+            </div>
+            <div>
+                <img src="7.jpg" alt="Design 7">
+                <p><b>PRICE: $100</b></p>
+            </div>
+            <div>
+                <img src="8.jpg" alt="Design 8">
+                <p><b>PRICE: $100</b></p>
+            </div>
+            <div>
+                <img src="9.jpg" alt="Design 9">
+                <p><b>PRICE: $100</b></p>
+            </div>
+        </div>
+    </section>
+    <section id="about_us" class="about-section">
+        <h1><u>About Us</u></h1>
+        <p><strong>Name: Satish Digwal</strong></p>
+        <p>With 4 years of experience in the industry, we specialize in the latest design trends and utilize state-of-the-art machinery operated by skilled workers. Our commitment to quality and innovation sets us apart in the wooden temple design market.</p>
+    </section>
+    <section id="contact_us" class="contact-section">
+        <h1>Contact</h1>
+        <p><strong>Mobile Number:</strong> +1 234 567 890</p>
+        <p><strong>Address:</strong> Texas, US</p>
+        <p>If you have any questions or need further information, feel free to contact us. We are here to help you with all your wooden temple design needs.</p>
+    </section>
+    <footer>
+        <p>© 2025 by Akhil. All rights reserved.</p>
+    </footer>
+</body>
+</html>
